@@ -1,0 +1,66 @@
+/*header h1 nav ul li main section article p
+class: first-article second-article
+id: home about contact*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: darkgray;
+}
+header {
+  /*top- right- bottom- left*/
+  margin: 20px;
+  height: 200px;
+  width: 200px;
+  /*margin-top:20px;*/
+  padding: 20px;
+  border: 3px red solid;
+  background-color: orange;
+  border-radius: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul {
+  margin: 10px;
+}
+li {
+  list-style: none;
+}
+/*home skal være rød, about skal være 
+blå og contact skal være grønn*/
+
+#home {
+  color: red;
+}
+#about {
+  color: blue;
+}
+#contact {
+  color: green;
+}
+
+main {
+  padding: 10px;
+  border: green dotted 4px;
+}
+section {
+  border: dashed blue 2px;
+  margin: 10px;
+  padding: 10px;
+}
+.first-article {
+  border: 2px solid red;
+  padding: 5px;
+  background-color: cornflowerblue;
+}
+
+.second-article {
+  background-color: hotpink;
+}
+article {
+  height: 200px;
+}
