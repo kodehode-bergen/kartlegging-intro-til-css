@@ -1,7 +1,20 @@
-/*header h1 nav ul li main section article p
+/*Jeg starter alltid CSS-filen min med å hente inn elementer, id'er og klasser
+fra HTML'en min. Da slipper jeg å bytte frem og tilbake mellom to dokumenter,
+og gjør stylingjobben lettere for meg selv. Her er det også viktig 
+å tenke over hvordan man har navngitt ting. #home er lettere å forstå enn
+#link1 når man styler. 
+Klasser targeter man med ., slik som .first-article mens ID targetes med #, slik som #home.
+header h1 nav ul li main section article p
 class: first-article second-article
 id: home about contact*/
 * {
+  /* Denne kodeblokken kalles for en CSS reset. I denne fjerner jeg
+    det som heter implied margins og paddings. Da forsvinner alle marginer og
+    paddinger som ligger som en standard i de ulike elementene. 
+    Box-sizing bruker jeg for å ha bedre kontroll på størrelsen av elementene
+    mine på siden. Denne sikrer at når jeg gir et element en fast størrelse, så vil
+    det som finnes av border og padding skje innover i elementet fremfor på utsiden.
+    Da sikrer jeg at elementet mitt ikke blir større når jeg legger på en border.*/
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -10,15 +23,17 @@ body {
   background-color: darkgray;
 }
 header {
-  /*top- right- bottom- left*/
-  margin: 20px;
+  /*Flere elementer kan styles i shorthand. I dette dokumentet kan både
+  margin, padding og border radius styles i fire ulike retninger. Disse vil følge
+  klokken, og styles derfor top- right- bottom- left*/
+  margin: 20px; /*Avstanden mellom elementet og det som er rundt på utsiden*/
   height: 200px;
   width: 200px;
   /*margin-top:20px;*/
-  padding: 20px;
-  border: 3px red solid;
+  padding: 20px; /*Avstanden mellom kanten av elementet og elementene inni det.*/
+  border: 3px red solid; /*Kantlinje. Rekkefølgen er irrelevant*/
   background-color: orange;
-  border-radius: 500px;
+  border-radius: 500px; /*Avrunding på kantene.*/
   display: flex;
   justify-content: center;
   align-items: center;
@@ -28,6 +43,9 @@ ul {
   margin: 10px;
 }
 li {
+  /*Dersom jeg har styling som skal gjelde for alle elementene av en type, 
+    legger jeg det kun inn i hovedelementet. Styling som er ulik for de forskjellige
+    ID eller klasser legger jeg inn på de respektive klassene.*/
   list-style: none;
 }
 /*home skal være rød, about skal være 

@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="style.css" />
+    <!--Når man linker stylesheet trenger man bare å skrive link:css, da vil vsCode automatisk hente opp resten av kodeblokken. Husk å sjekke at navnet på stylesheet matcher navnet du har gitt css-filen din-->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS 09.01.25</title>
@@ -11,6 +12,8 @@
       <h1>Hello</h1>
       <nav>
         <ul>
+          <!--ID gies til elementer som kun skal brukes en gang på siden. Class gies til elementer som skal brukes flere ganger. 
+            I dette tilfellet skal de ulike list items ha hver sin farge, og da gir det mening å bruke ID for å skille dem fra hverandre.-->
           <li id="home">Home</li>
           <li id="about">About</li>
           <li id="contact">Contact</li>
@@ -19,6 +22,21 @@
     </header>
     <main>
       <section>
+        <!--Her har jeg valgt å bruke klasser for å skille de to artiklene fra hverandre. Da kan jeg enklere style de to ulike typene hver for seg. -->
+        <article class="first-article">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+            veritatis exercitationem at accusamus. Quia nam numquam similique
+            iure. Quis, et?
+          </p>
+        </article>
+        <article class="second-article">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+            aliquid consequatur numquam pariatur doloribus voluptas repellat
+            fugit? Amet, tenetur fugiat?
+          </p>
+        </article>
         <article class="first-article">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
